@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="What would you like to do?"
+
+        android:textSize="25dp" />
+
+
+    <Spinner
+        android:id="@+id/SpinnerText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerBitValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerText"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerBitValue"
+        android:layout_marginTop="20dp"
+        android:text="GO" />
+
+    <TextView
+        android:id="@+id/ScoreTracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:ems="5"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:hint="Score: 0/0"
+        />
+
+    <TextView
+        android:id="@+id/QuizScore"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScoreTracker"
+        android:ems="5"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:hint="Quiz Score: 0/0"
+        />
+
+
+</RelativeLayout>

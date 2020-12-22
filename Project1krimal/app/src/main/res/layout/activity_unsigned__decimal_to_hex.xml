@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Unsigned_DecimalToHex">
+
+    <TextView
+        android:id="@+id/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="For Signed (two's complement) numbers, what is the hex value for the decimal value " />
+
+    <TextView
+        android:id="@+id/InputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TEXT"
+        android:textSize="20dp"
+        android:text="TEXT"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputText"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/TooSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Value is too small"
+
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/TooLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Value is too large"
+
+            />
+
+        <RadioButton
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Value:"
+
+            />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/SpinnerFirst"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerSecond"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_toRightOf="@+id/SpinnerFirst"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerThird"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_toRightOf="@+id/SpinnerSecond"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerFour"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_toRightOf="@+id/SpinnerThird"
+        android:textSize="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerSecond"
+        android:layout_marginTop="20dp"
+        android:text="Check my answer" />
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerSecond"
+        android:layout_toRightOf="@id/checkButton"
+        android:layout_marginTop="20dp"
+        android:text="Next Question" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NextButton"
+        android:ems="5"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp"
+        android:hint="Result: "
+        />
+
+    <TextView
+        android:id="@+id/ScoreTracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Result"
+        android:ems="5"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:hint="Score: 0/0"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Question" />
+
+
+
+
+    <EditText
+        android:id="@+id/InputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TEXT"
+        android:inputType="numberDecimal"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your answer"
+        />
+
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputText"
+        android:text="Next Question" />
+
+    <TextView
+        android:id="@+id/ScoreTracker"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NextButton"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:hint="Quiz Score: "
+        />
+
+
+</RelativeLayout>

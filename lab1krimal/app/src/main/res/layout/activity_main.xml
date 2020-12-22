@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText2"
+        android:text="Clear" />
+
+    <RadioGroup
+        android:id="@+id/RadioLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/editText2"
+        android:layout_marginTop="10dp"
+        >
+        <RadioButton
+            android:id="@+id/Binary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Binary"
+            android:onClick="checkButton"
+          />
+
+        <RadioButton
+            android:id="@+id/Octal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Octal"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/Decimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Decimal"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/Hex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hex"
+            android:onClick="checkButton"
+            android:checked="true"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioLayout"
+        android:layout_marginTop="15dp"
+        android:text="Convert"
+         />
+
+    <TextView
+        android:id="@+id/Binary_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/button"
+        android:layout_marginTop="30dp"
+        android:hint="Binary"
+         />
+    <TextView
+        android:id="@+id/Octal_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/Binary_output"
+        android:layout_marginTop="10dp"
+        android:hint="Octal"
+         />
+    <TextView
+        android:id="@+id/Decimal_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/Octal_output"
+        android:layout_marginTop="10dp"
+        android:hint="Decimal"
+         />
+    <TextView
+        android:id="@+id/Hex_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/Decimal_output"
+        android:layout_marginTop="10dp"
+        android:hint="Hexadecimal"
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/Hex_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+
+</RelativeLayout>

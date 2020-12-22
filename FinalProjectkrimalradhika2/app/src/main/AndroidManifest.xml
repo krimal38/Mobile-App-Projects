@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fall2020.mobileapp.finalproject_krimal_radhika2">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.Camera" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="q">
+        <activity android:name=".CheckBeforeUpdating_4digit" />
+        <activity android:name=".Upadatepassword_6digit" />
+        <activity android:name=".CreatePassword_6digit" />
+        <activity android:name=".EnterPin_6digit" />
+        <activity android:name=".EnterPin_4" />
+        <activity android:name=".PictureNameActivity" />
+        <activity android:name=".FinalLayout" />
+        <activity android:name=".GalleryClass" />
+        <activity android:name=".UpdatePasswordDigit4" />
+        <activity android:name=".CreateNewPassword4Digit" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

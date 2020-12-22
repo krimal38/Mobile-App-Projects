@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill total: $"   android:hint="Enter amount"
+            android:textSize="30dp"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill"
+            android:textSize="30dp"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The service was"
+        android:textSize="20dp"
+        />
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:onClick="onRadioButtonClicked"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/excellent_button"
+            android:textSize="20dp"
+            android:text="Excellent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/average_button"
+            android:textSize="20dp"
+            android:text="Average"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/lacking_button"
+            android:textSize="20dp"
+            android:text="Lacking"/>
+
+    </RadioGroup>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip: $"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/computed_tip"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: $"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_total"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/secondActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE PERCENTAGES"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Implicit_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALL LAB1 IMPLICITLY"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

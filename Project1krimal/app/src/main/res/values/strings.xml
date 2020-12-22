@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Project1-krimal</string>
+
+    <string-array name="conversion_list">
+        <item>Practise Hex to Decimal (Signed and Unsigned)</item>
+        <item>Practise Unsigned Decimal to Hex</item>
+        <item>Practise Signed Decimal to Hex</item>
+        <item>Quiz me!</item>
+    </string-array>
+
+    <string-array name="bit_conversion">
+        <item>8 bit</item>
+        <item>10 bit</item>
+        <item>12 bit</item>
+
+    </string-array>
+
+    <string-array name="First_spinner_SignedToHex">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+
+    </string-array>
+
+    <string-array name="Second_spinner_SignedToHex">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+
+    </string-array>
+
+    <string-array name="Third_spinner_SignedToHex">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+
+    </string-array>
+
+
+    <string-array name="Forth_spinner_SignedToHex">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+
+    </string-array>
+</resources>

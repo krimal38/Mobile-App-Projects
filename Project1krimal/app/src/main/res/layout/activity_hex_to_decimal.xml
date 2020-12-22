@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HexToDecimal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "What are the signed and unsigned values for"
+        android:textSize="23dp"
+       />
+   
+
+    <TextView
+        android:id="@+id/textQuestionHex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0x"
+        android:textSize="20dp"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/InsertText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:text="Text"
+        android:layout_toRightOf="@id/textQuestionHex1"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/Unsigned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InsertText"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Unsigned" />
+
+    <EditText
+        android:id="@+id/Unsigned_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/InsertText"
+       android:layout_toRightOf="@id/Unsigned"
+        android:hint="Decimal Number" />
+
+    <TextView
+        android:id="@+id/Signed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Unsigned_enter"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Signed" />
+
+    <EditText
+        android:id="@+id/Signed_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/Unsigned_enter"
+        android:layout_toRightOf="@id/Unsigned"
+        android:layout_marginTop="20dp"
+        android:hint="Decimal Number" />
+
+    <Button
+        android:id="@+id/CheckButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Signed_enter"
+        android:layout_marginTop="20dp"
+        android:text="CHECK MY ANSWER" />
+
+    <TextView
+        android:id="@+id/ScoreTracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_forSignedAnswer"
+        android:ems="5"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:text="Score: 0/0" />
+
+    <TextView
+        android:id="@+id/textView_forUnsignedAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:ems="10"
+        android:text = "Unsigned value:"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_forSignedAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_forUnsignedAnswer"
+        android:ems="10"
+        android:textSize="20dp"
+        android:text="Signed value:"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Signed_enter"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/CheckButton"
+        android:text="Next Question" />
+
+
+</RelativeLayout>
